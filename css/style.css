@@ -811,8 +811,7 @@ template {
 
 .map {
   width: 347px;
-  height: 215px;
-  background-color: black;
+  height: 213px;
 }
 
 @media (max-width: 1200px) {
