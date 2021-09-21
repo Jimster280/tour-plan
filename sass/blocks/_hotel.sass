@@ -64,9 +64,13 @@
     font-weight: 700
 .swiper
   width: 100%
-  height: 450px
+  height: 100%
   position: relative
   border-radius: 8px
+  &-slide
+    &__img
+      width: 100%
+      height: 450px
   &::after
     content: ''
     position: absolute
@@ -158,12 +162,15 @@
     border: none
     color: $white
     background-color: $primary
+    width: 100%
+    min-height: 45px
     margin-top: 17px
     font-weight: 600
     font-size: 14px
     line-height: 19px
     border-radius: 4px
-    padding: 13px 83.6px
 .map
   width: 347px
   height: 213px
+  border-radius: 10px
+  overflow: hidden

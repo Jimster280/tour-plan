@@ -642,9 +642,14 @@ template {
 
 .swiper {
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
+}
+
+.swiper-slide__img {
+  width: 100%;
+  height: 450px;
 }
 
 .swiper::after {
@@ -801,22 +806,34 @@ template {
   border: none;
   color: #fff;
   background-color: #EC1F46;
+  width: 100%;
+  min-height: 45px;
   margin-top: 17px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
   border-radius: 4px;
-  padding: 13px 83.6px;
 }
 
 .map {
   width: 347px;
   height: 213px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+    height: 450px;
+  }
+  .swiper-slide__img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -847,6 +864,32 @@ template {
   .search__input {
     width: 340px;
     height: 40px;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 26px;
+  }
+  .hotel-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+    padding-right: 22px;
+    padding-left: 23px;
+  }
+  .slider {
+    width: 100%;
+  }
+  .map {
+    height: 210px;
   }
 }
 
@@ -911,6 +954,22 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .slider {
+    height: 350px;
+  }
+  .hotel-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -923,11 +982,23 @@ template {
   .container {
     width: 275px;
   }
+  .slider {
+    height: 177px;
+    margin-top: 19px;
+  }
   .navbar-top {
     padding-top: 23px;
   }
   .hotel {
     padding-top: 0;
+  }
+  .booking {
+    width: 100%;
+    margin-top: -6px;
+  }
+  .map {
+    height: 179px;
+    margin-bottom: 49px;
   }
 }
 /*# sourceMappingURL=style.css.map */
