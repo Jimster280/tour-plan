@@ -62,26 +62,28 @@
     font-size: 10px
     line-height: 13px
     font-weight: 700
-.swiper
-  width: 100%
-  height: 100%
-  position: relative
-  border-radius: 8px
-  &-slide
-    &__img
-      width: 100%
-      height: 450px
-  &::after
-    content: ''
-    position: absolute
+.hotel
+  &-swiper
     width: 100%
     height: 100%
-    top: 0
-    bottom: 0
-    right: 0
-    left: 0
-    z-index: 10
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    position: relative
+    border-radius: 8px
+    &-slide
+      &__img
+        width: 100%
+        height: 450px
+        object-fit: cover
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        z-index: 10
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
 .slider
   width: 728px
   &-button
@@ -169,6 +171,7 @@
     font-size: 14px
     line-height: 19px
     border-radius: 4px
+    cursor: pointer
 .map
   width: 347px
   height: 213px

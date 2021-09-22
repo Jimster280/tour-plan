@@ -4,11 +4,12 @@
   .slider
     width: 590px
     height: 450px
-  .swiper
-    &-slide
-      &__img
-        height: 100%
-        object-fit: cover
+  .hotel
+    &-swiper
+      &-slide
+        &__img
+          height: 100%
+          object-fit: cover
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -42,6 +43,7 @@
     width: 340px
     padding-right: 22px
     padding-left: 23px
+    margin-bottom: 26px
   .slider
     width: 100%
   .map
@@ -50,6 +52,9 @@
   .container
     max-width: 576px
     width: 92%
+  .map
+    &__item
+      width: 100%
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -91,7 +96,6 @@
   .hotel
     &-wrap
       flex-direction: column
-      min-height: 450px
   .booking
     width: 100%
   .map
@@ -106,6 +110,12 @@
   .slider
     height: 177px
     margin-top: 19px
+    &-button
+      width: 10px
+      height: 15px
+      background-size: 8px
+  .stars
+    margin-right: 11px
   .navbar
     &-top
       padding-top: 23px
@@ -114,6 +124,6 @@
   .booking
     width: 100%
     margin-top: -6px
+    margin-bottom: 20px
   .map
     height: 179px
-    margin-bottom: 49px
