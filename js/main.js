@@ -11,3 +11,8 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.slider-button--prev',
   },
 });
+
+
+$(function(){
+  $('.newsletter').parallax({imageSrc: '../img/newsletterbackground.jpg'});
+});
