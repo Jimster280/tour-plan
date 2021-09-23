@@ -1,0 +1,64 @@
+.activities
+  padding: 60px 0 98px
+  &__title
+    margin: 0
+    margin-bottom: 57px
+    font-family: Mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    text-transform: uppercase
+  &-wrapper
+    display: flex
+    justify-content: space-between
+.card
+  width: 255px
+  height: 255px
+  position: relative
+  border-radius: 6px
+  overflow: hidden
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
+  &__img
+    width: 255px
+    height: 255px
+    object-fit: cover
+    z-index: 0
+  &__title
+    margin: 0
+    position: absolute
+    left: 26px
+    bottom: 72px
+    z-index: 100
+    color: white
+    font-family: Mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    min-height: 40px
+    max-width: 200px
+
+  &__button
+    margin: 0
+    padding: 7px 22px
+    border: none
+    color: white
+    background-color: $primary
+    border-radius: 4px
+    position: absolute
+    left: 26px
+    bottom: 24px
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 12px
+    line-height: 16px
+    cursor: pointer
