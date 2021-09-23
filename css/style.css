@@ -828,7 +828,7 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletterbackground.jpg);
+  background-image: url(img/newsletterbackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 200px;
@@ -1268,12 +1268,19 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .reviews-slider__username {
+    margin-top: 4px;
+  }
+  .reviews-slider__text {
+    margin-top: 43px;
+  }
   .reviews__title {
+    margin-bottom: 55px;
     font-size: 30px;
     line-height: 38px;
   }
   .activities {
-    padding: 50px 0 98px;
+    padding: 64px 0 98px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -1412,6 +1419,9 @@ template {
     margin-right: -65px;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
+  }
+  .reviews-slider__button__username {
+    margin-top: 0;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
