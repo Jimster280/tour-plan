@@ -62,8 +62,11 @@
       &__profile
         margin-bottom: -10px
       &__button
+        top: 46%
         &--prev
-          left: 30
+          left: 21px
+        &--next
+          right: -18px
       &__item
         max-width: 580px
       &__username
@@ -164,11 +167,11 @@
       &__button
         top: 45px
         &--prev
-          left: 50%
+          left: 49%
           margin-left: -65px
           transform: translate(-50%,-15px)
         &--next
-          right: 50%
+          right: 47%
           margin-right: -65px
           transform: translate(0,-50%)
         &__username
@@ -194,9 +197,13 @@
         &--prev
           margin-left: -69px
         &--next
-          margin-right: -87px
+          margin-right: -75px
+      &__text
+        text-align: left
   .activities
     padding-top: 21px
+    &-wrapper
+      order: 1324
     &__title
       font-weight: bold
       font-size: 18px
@@ -205,6 +212,10 @@
       margin-bottom: 36px
   .card
     width: 100%
+  .two
+    order: 3
+  .three
+    order: 2
 
 @media (max-width: 320px)
   .container

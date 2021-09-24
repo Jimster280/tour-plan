@@ -39,9 +39,10 @@
         background-repeat: no-repeat
         width: 70px
         height: 47px
+        z-index: 1
     &__button
       position: absolute
-      top: 50%
+      top: 41%
       transform: translateX(-50%)
       width: 30px
       height: 30px
@@ -53,7 +54,7 @@
       z-index: 10000
       &--prev
         background-image: url(../img/arrow-prev.svg)
-        left: 40px
+        left: 32px
       &--next
         background-image: url(../img/arrow-next.svg)
         right: 0
@@ -84,6 +85,8 @@
     &__rating
       display: flex
       align-items: center
+    &__star
+      padding: 0px 1px
     &__text
       font-style: normal
       font-weight: normal
@@ -94,3 +97,4 @@
       max-width: 540px
       overflow: auto
       max-height: 114px
+      z-index: 2
