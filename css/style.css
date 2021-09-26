@@ -1492,6 +1492,9 @@ template {
   .activities__title {
     margin-left: 6px;
   }
+  .card__title {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 576px) {
