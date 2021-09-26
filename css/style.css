@@ -1241,6 +1241,9 @@ template {
     width: 230px;
     height: 230px;
   }
+  .card__title {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1352,7 +1355,7 @@ template {
     height: 100%;
   }
   .card__title {
-    margin-left: 6px;
+    margin-left: 0;
   }
 }
 
