@@ -1,0 +1,146 @@
+.packages
+  padding-top: 40px
+  padding-bottom: 70px
+  &__star
+    padding-right: 1px
+  &-main
+    &__title
+      margin: 0
+      margin-bottom: 65px
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 45px
+      text-align: center
+      text-transform: uppercase
+  &-wrapper
+    display: grid
+    grid-template-columns: 350px 350px 350px
+    grid-template-rows: 500px 500px
+    grid-gap: 30px
+  &__image
+    position: relative
+    height: 250px
+  &-primary
+    grid-column-start: 1
+    grid-column-end: 3
+    display: grid
+    grid-template-columns: 1fr 1fr
+    border-radius: 8px
+    overflow: hidden
+    &__img
+      width: 100%
+      height: 500px
+      object-fit: cover
+    &__container
+      background-color: $dark
+      color: white
+      padding: 46px 21px 30px 46px
+      height: 500px
+    &__stars
+      display: flex
+      margin-bottom: 5px
+    &__text
+      margin: 0
+      margin-bottom: 41px
+      font-family: Mulish
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+      text-align: left
+  &__flash
+    position: absolute
+    top: 26px
+    left: 0
+    color: white
+    border-radius: 0px 4px 4px 0px
+    background-color: $primary
+    padding: 8px 21px 8px 11px
+    text-align: left
+    font-style: normal
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+  &__title
+    margin: 0
+    margin-bottom: 27px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+  &-info
+    display: flex
+    flex-direction: column
+    min-height: 67px
+    justify-content: space-between
+    margin-bottom: 37px
+    &__icon
+      margin-left: 14px
+    &__item
+      align-items: center
+      display: flex
+  &__words
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    margin-left: 14px
+  &__old-price
+    display: block
+    font-family: Mulish
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+    margin-bottom: 5px
+  &__offer
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__price
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+  &__button
+    margin: 0
+    padding: 10px 27px
+    border: none
+    color: white
+    background-color: $primary
+    border-radius: 4px
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    cursor: pointer
+    z-index: 100
+  &-secondary
+    display: grid
+    grid-template-row: 1fr 1fr
+    border-radius: 8px
+    overflow: hidden
+    &__container
+      background-color: $dark
+      color: white
+      height: 250px
+      padding: 30px 21px 25px 32px
+    &__info
+      margin-bottom: 24px
+    &__title
+      margin-bottom: 23px
+    &__button
+      margin-bottom: 3px
+    &__flash
+      font-style: normal
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+      padding: 4px 9px
+  &__img
+    height: 250px
+    width: 100%
+    object-fit: cover

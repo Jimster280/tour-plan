@@ -1224,6 +1224,234 @@ template {
           order: 4;
 }
 
+.packages {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.packages__star {
+  padding-right: 1px;
+}
+
+.packages-main__title {
+  margin: 0;
+  margin-bottom: 65px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 350px 350px 350px;
+      grid-template-columns: 350px 350px 350px;
+  -ms-grid-rows: 500px 500px;
+      grid-template-rows: 500px 500px;
+  grid-gap: 30px;
+}
+
+.packages__image {
+  position: relative;
+  height: 250px;
+}
+
+.packages-primary {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages-primary__img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packages-primary__container {
+  background-color: #0A223D;
+  color: white;
+  padding: 46px 21px 30px 46px;
+  height: 500px;
+}
+
+.packages-primary__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.packages-primary__text {
+  margin: 0;
+  margin-bottom: 41px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  text-align: left;
+}
+
+.packages__flash {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  color: white;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #EC1F46;
+  padding: 8px 21px 8px 11px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.packages-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 67px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 37px;
+}
+
+.packages-info__icon {
+  margin-left: 14px;
+}
+
+.packages-info__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.packages__words {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 14px;
+}
+
+.packages__old-price {
+  display: block;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  margin-bottom: 5px;
+}
+
+.packages__offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages__price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages__button {
+  margin: 0;
+  padding: 10px 27px;
+  border: none;
+  color: white;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.packages-secondary {
+  display: -ms-grid;
+  display: grid;
+  grid-template-row: 1fr 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages-secondary__container {
+  background-color: #0A223D;
+  color: white;
+  height: 250px;
+  padding: 30px 21px 25px 32px;
+}
+
+.packages-secondary__info {
+  margin-bottom: 24px;
+}
+
+.packages-secondary__title {
+  margin-bottom: 23px;
+}
+
+.packages-secondary__button {
+  margin-bottom: 3px;
+}
+
+.packages-secondary__flash {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  padding: 4px 9px;
+}
+
+.packages__img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
