@@ -1471,9 +1471,6 @@ template {
     width: 230px;
     height: 230px;
   }
-  .card__title {
-    font-size: 14px;
-  }
   .packages__title {
     margin-bottom: 18px;
   }
@@ -1776,9 +1773,6 @@ template {
   }
   .activities {
     padding: 50px 0 98px;
-  }
-  .activities__title {
-    margin-left: 6px;
   }
   .card__title {
     margin-left: 0;
