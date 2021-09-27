@@ -16,7 +16,13 @@
     height: 230px
     &__title
       font-size: 14px
-    
+  .packages
+    &__title
+      margin-bottom: 18px
+    &-primary
+      &__text
+        margin-bottom: 26px
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -60,6 +66,15 @@
     margin-bottom: 26px
   .map
     height: 210px
+  .packages
+    padding-top: 25px
+    padding-bottom: 60px
+    &-main
+      &__title
+        font-size: 30px
+        margin-bottom: 40px
+    &-wrapper
+      grid-template-columns: 1fr 1fr
   .reviews
     &-slider
       &__profile
@@ -148,6 +163,36 @@
     width: 100%
   .map
     width: 100%
+  .packages
+    &-primary
+      display: grid
+      grid-template-row: 1fr 1fr
+      border-radius: 8px
+      overflow: hidden
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 1
+      grid-row-end: 2
+      grid-template-columns: 1fr
+      &__stars
+        display: none
+      &__text
+        display: none
+      &__container
+        background-color: $dark
+        color: white
+        height: 250px
+        padding: 30px 21px 25px 32px
+      &__img
+        height: 250px
+    &-info
+      margin-bottom: 24px
+    &__flash
+      font-style: normal
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+      padding: 4px 9px
   .newsletter
     &__title
       margin-bottom: 30px
@@ -190,6 +235,19 @@
   .card
     &__title
       margin-left: 0
+@media (max-width: 625px)
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr
+    &__flash
+      border-radius: 0px 4px 4px 0px
+      background-color: $primary
+      padding: 8px 21px 8px 11px
+      text-align: left
+      font-style: normal
+      font-weight: 600
+      font-size: 12px
+      line-height: 15px
 
 @media (max-width: 576px)
   .logo
