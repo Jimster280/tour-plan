@@ -28,6 +28,8 @@
       align-content: center
       grid-row: 2 / 4
       grid-column: span 2
+      max-width: 298px
+      justify-content: space-between
   &__contact
     &-details
       grid-column-start: span 2
@@ -58,12 +60,13 @@
       margin-bottom: 20px
     &--flex
       display: grid
-      grid-template-columns: 20px 1fr
+      grid-template-columns: 20px minmax(250px, 1fr)
       grid-column-gap: 20px
-      margin-bottom: 0
+      margin-bottom: 22px
   &__icon
     margin-top: 5px
     &--map
+      margin-top: 0
       margin-left: 6px
     &-wrapper
       min-width: 40px
@@ -88,9 +91,9 @@
     font-size: 18px
     line-height: 23px
     text-transform: uppercase
+    white-space: nowrap
     &--inline
       margin: 0
-      margin-right: 43px
       margin-left: 5px
     &--details
       margin-bottom: 26px
@@ -168,7 +171,6 @@
     &__ul
       list-style: none
       display: flex
-      margin-right: 262px
     &__item
       margin-right: 14px
     &__link
