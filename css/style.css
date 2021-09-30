@@ -2144,12 +2144,16 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    overflow: auto;
   }
   .navbar-menu__item {
     margin-bottom: 17px;
   }
   .navbar-menu__item--mobile--visible {
     display: block;
+  }
+  .navbar__search {
+    margin-left: 0;
   }
   .menu-button {
     padding: 0;
