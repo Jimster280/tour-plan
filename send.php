@@ -56,4 +56,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Loction: thankyou.html');
+header('Location: thankyou.html');
