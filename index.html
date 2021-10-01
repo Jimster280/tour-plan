@@ -245,7 +245,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -1049,7 +1051,7 @@
                 name="phone"
               />
               <textarea
-                class="footer__massage"
+                class="massage footer__massage"
                 cols="30"
                 rows="10"
                 placeholder="Message"
@@ -1085,36 +1087,36 @@
       </div>
       <!-- ./container -->
     </footer>
-    <div class="modal">
+    <div class="modal" id="booking-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
-        <a href="" class="modal__close">
+        <a href="#" class="modal__close">
           <img src="img/close.svg" alt="close icon" />
         </a>
-        <h3 class="footer__title footer__title--message">Send us a message</h3>
-        <form action="send.php" method="POST" class="footer__form">
+        <h3 class="modal__title modal__title--message">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
           <input
             type="text"
-            class="input footer__input"
+            class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
           />
           <input
             type="text"
-            class="input footer__input footer__input--left"
+            class="input modal__input modal__input--left"
             placeholder="Phone Number*"
             name="phone"
           />
           <textarea
-            class="footer__massage"
+            class="massage modal__massage"
             cols="30"
             rows="10"
             placeholder="Message"
             name="massage"
           ></textarea>
-          <button class="button footer__button">Send</button>
-          <span class="footer__info">* Required Fields</span>
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
         </form>
       </div>
       <!-- /.modal__dialog -->
