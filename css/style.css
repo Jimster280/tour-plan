@@ -2186,6 +2186,9 @@ template {
     margin-top: 10px;
     margin-bottom: 14px;
   }
+  .hotel--hidden {
+    display: none;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -2229,6 +2232,9 @@ template {
   .map {
     width: 100%;
   }
+  .packages--hidden {
+    display: none;
+  }
   .packages-primary {
     display: -ms-grid;
     display: grid;
@@ -2269,6 +2275,9 @@ template {
     line-height: 10px;
     padding: 4px 9px;
   }
+  .newsletter--hidden {
+    display: none;
+  }
   .newsletter__title {
     margin-bottom: 30px;
     font-style: normal;
@@ -2292,6 +2301,9 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .reviews--hidden {
+    display: none;
   }
   .reviews-slider__button {
     top: 45px;
@@ -2320,8 +2332,14 @@ template {
   .activities {
     padding: 50px 0 98px;
   }
+  .activities--hidden {
+    display: none;
+  }
   .card__title {
     margin-left: 0;
+  }
+  .footer--hidden {
+    display: none;
   }
   .footer__logo-link {
     -ms-grid-column: 1;
