@@ -332,7 +332,9 @@
               <div class="packages__old-price">$ 10,500</div>
               <div class="packages__offer">
                 <div class="packages__price">$ 8,500</div>
-                <button class="packages__button">Book Now</button>
+                <button data-toggle="modal" class="packages__button">
+                  Book Now
+                </button>
               </div>
             </div>
             <!-- ./packages-primary__container -->
@@ -389,7 +391,10 @@
               <div class="packages__old-price">$ 8,500</div>
               <div class="packages__offer">
                 <div class="packages__price">$ 3,000</div>
-                <button class="packages__button packages-secondary__button">
+                <button
+                  data-toggle="modal"
+                  class="packages__button packages-secondary__button"
+                >
                   Book Now
                 </button>
               </div>
@@ -448,7 +453,10 @@
               <div class="packages__old-price">$ 10,500</div>
               <div class="packages__offer">
                 <div class="packages__price">$ 9,500</div>
-                <button class="packages__button packages-secondary__button">
+                <button
+                  data-toggle="modal"
+                  class="packages__button packages-secondary__button"
+                >
                   Book Now
                 </button>
               </div>
@@ -507,7 +515,10 @@
               <div class="packages__old-price">$ 4,500</div>
               <div class="packages__offer">
                 <div class="packages__price">$ 2,500</div>
-                <button class="packages__button packages-secondary__button">
+                <button
+                  data-toggle="modal"
+                  class="packages__button packages-secondary__button"
+                >
                   Book Now
                 </button>
               </div>
@@ -566,7 +577,10 @@
               <div class="packages__old-price">$ 6,500</div>
               <div class="packages__offer">
                 <div class="packages__price">$ 3,500</div>
-                <button class="packages__button packages-secondary__button">
+                <button
+                  data-toggle="modal"
+                  class="packages__button packages-secondary__button"
+                >
                   Book Now
                 </button>
               </div>
@@ -820,12 +834,12 @@
               The curious corner <br />
               of chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card activities__card two">
             <img src="img/card-2.jpg" alt=" card img" class="card__img" />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card activities__card three">
             <img src="img/card-3.jpg" alt=" card img" class="card__img" />
@@ -833,12 +847,12 @@
               Tamarind falls hiking <br />
               trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card activities__card four">
             <img src="img/card-4.jpg" alt=" card img" class="card__img" />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
         </div>
         <!-- /.activities-wrapper -->
@@ -1104,8 +1118,14 @@
           />
           <input
             type="text"
-            class="input modal__input modal__input--left"
+            class="input modal__input"
             placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="EMail*"
             name="phone"
           />
           <textarea
@@ -1116,7 +1136,7 @@
             name="massage"
           ></textarea>
           <button class="button modal__button">Send</button>
-          <span class="modal__info">* Required Fields</span>
+          <span class="modal__info">*&nbsp;Required&nbsp;Fields</span>
         </form>
       </div>
       <!-- /.modal__dialog -->

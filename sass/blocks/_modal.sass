@@ -1,4 +1,5 @@
 .modal
+  overflow: auto
   &__overlay
     position: fixed
     left: 0
@@ -7,28 +8,30 @@
     bottom: 0
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 110000
-    visibility: hidden
+    display: none
     opacity: 0
     transition: opacity 0.2s
+    overflow: auto
     &--visible
-      visibility: visible
+      display: block
       opacity: 1
   &__dialog
     position: fixed
-    top: 50%
+    top: 37%
     left: 50%
-    padding: 33px
+    padding: 33px 86px
     background-color: $dark
     color: $white
     border-radius: 8px
     transform: translate(-50%, -50%)
     z-index: 12000000
     max-width: 478px
-    visibility: hidden
+    display: none
     opacity: 0
     transition: opacity 0.2s
+    overflow: auto
     &--visible
-      visibility: visible
+      display: block
       opacity: 1
   &__close
     position: absolute
@@ -41,8 +44,9 @@
     margin-bottom: 15px
   &__massage
     width: 100%
-    min-height: 123px
+    max-height: 123px
     margin-bottom: 15px
+    word-wrap: scroll
   &__button
     min-width: 160px
     min-height: 50px
@@ -61,6 +65,7 @@
     line-height: 15px
     color: $footer-text
     margin-top: 18px
+    white-space: nowrap
   &__title
     margin: 0
     margin-bottom: 15px

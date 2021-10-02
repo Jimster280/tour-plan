@@ -13,6 +13,10 @@ body--hidden {
   overflow: hidden;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
@@ -1903,6 +1907,10 @@ template {
   margin-top: -2px;
 }
 
+.modal {
+  overflow: auto;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1911,22 +1919,23 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 110000;
-  visibility: hidden;
+  display: none;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow: auto;
 }
 
 .modal__overlay--visible {
-  visibility: visible;
+  display: block;
   opacity: 1;
 }
 
 .modal__dialog {
   position: fixed;
-  top: 50%;
+  top: 37%;
   left: 50%;
-  padding: 33px;
+  padding: 33px 86px;
   background-color: #0A223D;
   color: #fff;
   border-radius: 8px;
@@ -1934,14 +1943,15 @@ template {
           transform: translate(-50%, -50%);
   z-index: 12000000;
   max-width: 478px;
-  visibility: hidden;
+  display: none;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow: auto;
 }
 
 .modal__dialog--visible {
-  visibility: visible;
+  display: block;
   opacity: 1;
 }
 
@@ -1960,8 +1970,9 @@ template {
 
 .modal__massage {
   width: 100%;
-  min-height: 123px;
+  max-height: 123px;
   margin-bottom: 15px;
+  word-wrap: scroll;
 }
 
 .modal__button {
@@ -1984,6 +1995,7 @@ template {
   line-height: 15px;
   color: #BDBDBD;
   margin-top: 18px;
+  white-space: nowrap;
 }
 
 .modal__title {
@@ -2258,6 +2270,10 @@ template {
   .card__title {
     margin-left: 0;
   }
+  .modal__dialog {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2526,6 +2542,12 @@ template {
   }
 }
 
+@media (max-width: 743px) {
+  .modal__button {
+    margin-bottom: 15px;
+  }
+}
+
 @media (max-width: 625px) {
   .packages-wrapper {
     -ms-grid-columns: 1fr;
@@ -2713,6 +2735,10 @@ template {
   }
   .footer-bottom__item {
     margin-right: 5px;
+  }
+  .modal__dialog {
+    padding-right: 27px;
+    padding-left: 27px;
   }
 }
 
