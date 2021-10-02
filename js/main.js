@@ -45,23 +45,17 @@ $(document).ready(function () {
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    var body = $(
-      ".navbar, .packeges, .hotel, .breadcrumb, .newsletter, .reviews, .activities, .footer"
-    );
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
-    body.addClass(".lock");
+    document.querySelector(".body").classList.toggle("body--hidden");
   }
 
   function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    var body = $(
-      ".navbar, .packeges, .hotel, .breadcrumb, .newsletter, .reviews, .activities, .footer"
-    );
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-    body.removeClass(".lock");
+    document.querySelector(".body").classList.toggle("body--hidden");
   }
 });

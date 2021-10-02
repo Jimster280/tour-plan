@@ -8,30 +8,31 @@
     bottom: 0
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 110000
-    display: none
+    display: flex
+    align-items: center
+    visibility: hidden
     opacity: 0
     transition: opacity 0.2s
     overflow: auto
     &--visible
-      display: block
+      visibility: visible
       opacity: 1
   &__dialog
-    position: fixed
-    top: 37%
-    left: 50%
+    margin: auto
+    position: relative
     padding: 33px 86px
     background-color: $dark
     color: $white
     border-radius: 8px
-    transform: translate(-50%, -50%)
     z-index: 12000000
     max-width: 478px
-    display: none
+    visibility: hidden
     opacity: 0
     transition: opacity 0.2s
     overflow: auto
+    margin-bottom: 297px
     &--visible
-      display: block
+      visibility: visible
       opacity: 1
   &__close
     position: absolute

@@ -13,7 +13,7 @@ body--hidden {
   overflow: hidden;
 }
 
-.lock {
+.body--hidden {
   overflow: hidden;
 }
 
@@ -1919,7 +1919,13 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 110000;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -1927,31 +1933,29 @@ template {
 }
 
 .modal__overlay--visible {
-  display: block;
+  visibility: visible;
   opacity: 1;
 }
 
 .modal__dialog {
-  position: fixed;
-  top: 37%;
-  left: 50%;
+  margin: auto;
+  position: relative;
   padding: 33px 86px;
   background-color: #0A223D;
   color: #fff;
   border-radius: 8px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   z-index: 12000000;
   max-width: 478px;
-  display: none;
+  visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
   overflow: auto;
+  margin-bottom: 297px;
 }
 
 .modal__dialog--visible {
-  display: block;
+  visibility: visible;
   opacity: 1;
 }
 
@@ -2270,10 +2274,6 @@ template {
   .card__title {
     margin-left: 0;
   }
-  .modal__dialog {
-    padding-right: 70px;
-    padding-left: 70px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -2542,12 +2542,6 @@ template {
   }
 }
 
-@media (max-width: 743px) {
-  .modal__button {
-    margin-bottom: 15px;
-  }
-}
-
 @media (max-width: 625px) {
   .packages-wrapper {
     -ms-grid-columns: 1fr;
@@ -2737,8 +2731,8 @@ template {
     margin-right: 5px;
   }
   .modal__dialog {
-    padding-right: 27px;
-    padding-left: 27px;
+    max-width: 98%;
+    padding: 33px;
   }
 }
 
