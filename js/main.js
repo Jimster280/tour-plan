@@ -37,6 +37,18 @@ $(document).ready(function () {
     document.querySelector(".body").classList.toggle("body--hidden");
   });
 
+  // Create the measurement node
+  var scrollDiv = document.createElement("div");
+  scrollDiv.className = "scrollbar-measure";
+  document.body.appendChild(scrollDiv);
+
+  // Get the scrollbar width
+  var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+  console.warn(scrollbarWidth); // Mac:  15
+
+  // Delete the DIV
+  document.body.removeChild(scrollDiv);
+
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
@@ -47,7 +59,8 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
-    document.querySelector(".body").classList.toggle("body--hidden");
+    $("body").css("overflow", "hidden");
+    $("body").css("padding-right", scrollbarWidth);
   }
 
   function closeModal(event) {
@@ -56,6 +69,7 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-    document.querySelector(".body").classList.toggle("body--hidden");
+    $("body").css("padding-right", "0");
+    $("body").css("overflow", "auto");
   }
 });

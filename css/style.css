@@ -90,6 +90,14 @@ img {
   font-weight: normal;
 }
 
+.scrollbar-measure {
+  width: 100px;
+  height: 100px;
+  overflow: scroll;
+  position: absolute;
+  top: -9999px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1314,8 +1322,8 @@ template {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 500px 500px;
-      grid-template-rows: 500px 500px;
+  -ms-grid-rows: (min-contentn)[3];
+      grid-template-rows: repeat(3, min-contentn);
   grid-auto-rows: auto;
   grid-auto-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
@@ -1349,7 +1357,7 @@ template {
   background-color: #0A223D;
   color: white;
   padding: 46px 21px 30px 46px;
-  height: 500px;
+  min-height: 500px;
 }
 
 .packages-primary__stars {
@@ -1368,6 +1376,8 @@ template {
   font-size: 14px;
   line-height: 160.6%;
   text-align: left;
+  overflow: auto;
+  max-height: 176px;
 }
 
 .packages__flash {
@@ -1499,7 +1509,7 @@ template {
 .packages-secondary__container {
   background-color: #0A223D;
   color: white;
-  height: 250px;
+  min-height: 250px;
   padding: 30px 21px 25px 32px;
 }
 
@@ -1909,6 +1919,7 @@ template {
 
 .modal {
   overflow: auto;
+  text-align: center;
 }
 
 .modal__overlay {
@@ -1938,6 +1949,7 @@ template {
 }
 
 .modal__dialog {
+  vertical-align: middle;
   margin: auto;
   position: relative;
   padding: 33px 86px;
@@ -1951,7 +1963,6 @@ template {
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
   overflow: auto;
-  margin-bottom: 297px;
 }
 
 .modal__dialog--visible {
@@ -1972,11 +1983,75 @@ template {
   margin-bottom: 15px;
 }
 
+.modal__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal__input:-ms-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal__input::-ms-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal__input::placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .modal__massage {
   width: 100%;
   max-height: 123px;
   margin-bottom: 15px;
   word-wrap: scroll;
+}
+
+.modal__massage::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal__massage:-ms-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal__massage::-ms-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal__massage::placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__button {
@@ -1990,6 +2065,18 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+}
+
+.modal__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .modal__info {
@@ -2733,6 +2820,25 @@ template {
   .modal__dialog {
     max-width: 98%;
     padding: 33px;
+  }
+}
+
+@media (max-width: 350px) {
+  .modal__info {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 0;
+  }
+  .modal__button-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

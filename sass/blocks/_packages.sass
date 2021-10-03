@@ -6,7 +6,7 @@
   &-wrapper
     display: grid
     grid-template-columns: 1fr 1fr 1fr
-    grid-template-rows: 500px 500px
+    grid-template-rows: repeat(3, min-contentn)
     grid-auto-rows: auto
     grid-auto-columns: 1fr 1fr 1fr
     grid-gap: 30px
@@ -28,7 +28,7 @@
       background-color: $dark
       color: white
       padding: 46px 21px 30px 46px
-      height: 500px
+      min-height: 500px
     &__stars
       display: flex
       margin-bottom: 5px
@@ -41,6 +41,8 @@
       font-size: 14px
       line-height: 160.6%
       text-align: left
+      overflow: auto
+      max-height: 176px
   &__flash
     position: absolute
     top: 26px
@@ -127,7 +129,7 @@
     &__container
       background-color: $dark
       color: white
-      height: 250px
+      min-height: 250px
       padding: 30px 21px 25px 32px
     &__info
       margin-bottom: 24px
