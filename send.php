@@ -11,8 +11,24 @@ $email = $_POST['email'];
 $massage = $_POST['massage'];
 $phone = $_POST['phone'];
 
-// Формирование самого письма
+if ($name == "" && $email == "" && $massage == "" && $phone == "") {
+    echo 'Message could not be sent.';
+} else if ($email == "") {
 $title = "Новое обращение Best Tour Plan";
+$body = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$massage
+";
+} else if ($name == "" && $massage == "" && $phone == "") {
+   $title = "Новое обращение Best Tour Plan";
+$body = "
+<h2>Новое обращение</h2>
+<b>email:</b> $email<br>
+"; 
+} else {
+    $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
@@ -20,6 +36,14 @@ $body = "
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$massage
 ";
+}
+
+
+
+
+
+
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();

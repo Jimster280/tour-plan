@@ -6,13 +6,13 @@
   &-wrapper
     display: grid
     grid-template-columns: 1fr 1fr 1fr
-    grid-template-rows: repeat(3, min-contentn)
-    grid-auto-rows: auto
+    grid-template-rows: min-content min-content min-content
+    grid-auto-rows: repeat(3, min-content)
     grid-auto-columns: 1fr 1fr 1fr
     grid-gap: 30px
   &__image
     position: relative
-    height: 250px
+    height: 100%
   &-primary
     grid-column-start: 1
     grid-column-end: 3
@@ -22,7 +22,7 @@
     overflow: hidden
     &__img
       width: 100%
-      height: 500px
+      height: 100%
       object-fit: cover
     &__container
       background-color: $dark
@@ -123,7 +123,7 @@
     z-index: 100
   &-secondary
     display: grid
-    grid-template-row: 1fr 1fr
+    grid-template-rows: 250px 1fr
     border-radius: 8px
     overflow: hidden
     &__container
@@ -131,6 +131,7 @@
       color: white
       min-height: 250px
       padding: 30px 21px 25px 32px
+ 
     &__info
       margin-bottom: 24px
     &__title
@@ -144,6 +145,6 @@
       line-height: 10px
       padding: 4px 9px
   &__img
-    height: 250px
+    height: 100%
     width: 100%
     object-fit: cover
