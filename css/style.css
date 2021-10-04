@@ -1992,6 +1992,7 @@ template {
 .modal__input {
   width: 100%;
   margin-top: 15px;
+  font-size: 12px;
 }
 
 .modal__input::-webkit-input-placeholder {
@@ -2031,6 +2032,7 @@ template {
   max-height: 123px;
   margin-top: 15px;
   word-wrap: scroll;
+  font-size: 12px;
 }
 
 .modal__massage::-webkit-input-placeholder {
@@ -2072,6 +2074,7 @@ template {
   margin-top: 15px;
   padding: 18px;
   color: White;
+  font-size: 12px;
   font-style: normal;
   font-weight: bold;
   background-color: #EC1F46;
