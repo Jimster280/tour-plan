@@ -98,6 +98,10 @@ img {
   top: -9999px;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1740,11 +1744,9 @@ template {
   border: none;
   padding: 0 23px;
   height: 50px;
-  margin-bottom: 15px;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
   font-size: 12px;
   line-height: 15px;
+  width: 100%;
 }
 
 .footer__input::-webkit-input-placeholder {
@@ -1777,6 +1779,12 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+.footer__input-group {
+  margin-bottom: 15px;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
 }
 
 .footer__massage {
@@ -1983,7 +1991,7 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__input::-webkit-input-placeholder {
@@ -2021,7 +2029,7 @@ template {
 .modal__massage {
   width: 100%;
   max-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   word-wrap: scroll;
 }
 
@@ -2061,6 +2069,7 @@ template {
   min-width: 160px;
   min-height: 50px;
   margin-right: 45px;
+  margin-top: 15px;
   padding: 18px;
   color: White;
   font-style: normal;
@@ -2127,7 +2136,7 @@ template {
   .packages-primary__text {
     margin-bottom: 26px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2226,12 +2235,12 @@ template {
     margin-left: 15px;
     margin-right: 41px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 44%;
         flex-basis: 44%;
     width: 100px;
   }
-  .footer__input--left {
+  .footer__input-group--left {
     margin-right: 8%;
   }
   .footer__icon--map {
@@ -2783,15 +2792,18 @@ template {
     grid-column: span 2;
   }
   .footer__input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    width: 100%;
     height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  .footer__input-group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
   .footer__input--left {
     margin-right: 0;
+    margin-left: 0;
   }
   .footer__massage {
     -ms-flex-preferred-size: 100%;

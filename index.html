@@ -614,7 +614,7 @@
           class="subscribe newsletter__subscribe"
         >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
@@ -1051,19 +1051,26 @@
             <h3 class="footer__title footer__title--message">
               Send us a message
             </h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input footer__input--left"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input footer__input--right"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group footer__input-group--left">
+                <input
+                  type="tel"
+                  class="input footer__input footer__input--left"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  id="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="massage footer__massage"
                 cols="30"
@@ -1108,24 +1115,29 @@
             <img src="img/close.svg" alt="close icon" />
           </a>
           <h3 class="modal__title modal__title--message">Booking</h3>
-          <form action="send.php" method="POST" class="modal__form">
+          <form action="send.php" method="POST" class="modal__form form">
             <input
               type="text"
               class="input modal__input"
               placeholder="Your Full Name*"
               name="name"
+              required
+              minlength="2"
             />
             <input
-              type="text"
+              type="tel"
               class="input modal__input"
               placeholder="Phone Number*"
               name="phone"
+              id="phone"
+              required
             />
             <input
-              type="text"
+              type="email"
               class="input modal__input"
               placeholder="EMail*"
-              name="phone"
+              name="email"
+              required
             />
             <textarea
               class="massage modal__massage"
@@ -1145,6 +1157,8 @@
       <!-- /.modal__overlay -->
     </div>
     <!-- /.modal -->
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

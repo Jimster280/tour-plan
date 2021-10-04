@@ -72,4 +72,28 @@ $(document).ready(function () {
     $("body").css("padding-right", "0");
     $("body").css("overflow", "auto");
   }
+  // обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Имя должно быть не короче 2х букв",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "We need ur phone number",
+          phone: "Your phone number must be in the format of +7(9**) ***-**-**",
+        },
+      },
+    });
+  });
+
+  $(function () {
+    $("#phone").mask("8(999) 999-9999");
+  });
 });
