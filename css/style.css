@@ -1313,6 +1313,7 @@ template {
 }
 
 .packages {
+  display: none;
   padding-top: 40px;
   padding-bottom: 70px;
 }
@@ -1326,9 +1327,8 @@ template {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: min-content min-content min-content;
-      grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
-      grid-template-rows: min-content min-content min-content;
+  -ms-grid-rows: minmax(500px, 800px);
+      grid-template-rows: minmax(500px, 800px);
   grid-auto-rows: repeat(3, -webkit-min-content);
   grid-auto-rows: repeat(3, min-content);
   grid-auto-columns: 1fr 1fr 1fr;
