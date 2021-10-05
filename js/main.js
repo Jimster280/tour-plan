@@ -79,7 +79,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "Имя должно быть не короче 2х букв",
+          minlength: "Name must be not shorter then 2",
         },
         email: {
           required: "We need your email address to contact you",
@@ -88,6 +88,7 @@ $(document).ready(function () {
         phone: {
           required: "We need ur phone number",
           phone: "Your phone number must be in the format of +7(9**) ***-**-**",
+          minlength: "Enter full phone number",
         },
       },
     });
@@ -96,5 +97,6 @@ $(document).ready(function () {
 
   $(function () {
     $("#phone").mask("8(999) 999-9999");
+    $("#phone-2").mask("8(999) 999-9999");
   });
 });

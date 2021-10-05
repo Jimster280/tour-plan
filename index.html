@@ -605,21 +605,28 @@
       data-image-src="img/newsletterbackground.jpg"
     >
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2
+          class="newsletter-title newsletter__title"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-delay="300"
+        >
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
         >
-          <input
-            type="email"
-            class="subscribe__input"
-            placeholder="Your email address"
-            name="email"
-          />
+          <div class="subscribe__content">
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Your email address"
+              name="email"
+            />
+          </div>
           <button class="subscribe__button">Send</button>
         </form>
       </div>
@@ -1076,6 +1083,7 @@
                   placeholder="Your Full Name*"
                   name="name"
                   required
+                  minlength="2"
                 />
               </div>
               <div class="footer__input-group footer__input-group--left">
@@ -1086,6 +1094,7 @@
                   name="phone"
                   id="phone"
                   required
+                  minlength="11"
                 />
               </div>
               <textarea
@@ -1146,8 +1155,9 @@
               class="input modal__input"
               placeholder="Phone Number*"
               name="phone"
-              id="phone"
+              id="phone-2"
               required
+              minlength="11"
             />
             <input
               type="email"
