@@ -2178,6 +2178,16 @@ template {
   }
 }
 
+@media (min-width: 993px) {
+  button {
+    -webkit-transition: 0s background-color;
+    transition: 0s background-color;
+  }
+  button:hover {
+    background-color: #f55379;
+  }
+}
+
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
