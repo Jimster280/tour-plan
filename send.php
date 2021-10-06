@@ -56,8 +56,8 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'razumov_feodor@mail.ru'; // Логин на почте
-    $mail->Password   = '120100Feodor'; // Пароль на почте
+    $mail->Username   = 'r'; // Логин на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('razumov_feodor@mail.ru', 'Имя отправителя'); // Адрес самой почты и имя отправителя
